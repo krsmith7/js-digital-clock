@@ -1,16 +1,17 @@
 $(document).ready(function() {
 
- const clock = new Date;
+setInterval(function () {
 
- let display = $('<p>' + clock + '</p>');
+  const clock = (new Date).toLocaleTimeString();
 
-
-// console.log(clock);
-$('#clock').append(display);
+  let display = $('<p>' + clock + '</p>');
 
 
+  $('#clock').html(display);
+
+}, 500);
 
 
 
 
-})
+});
