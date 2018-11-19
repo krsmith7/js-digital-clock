@@ -12,16 +12,27 @@ setInterval(function () {
 $('#left-button').click( function() {
   let target = $('#clock');
   console.log('left align?');
-  target.removeClass();
+  target.removeClass('right-align');
   target.addClass('left-align')
 });
 
 $('#right-button').click( function() {
     let target = $('#clock');
     console.log('right align?');
-  target.removeClass();
+  target.removeClass('left-align');
   target.addClass('right-align')
 });
 
+$('#pink-button').click( function() {
+    let target = $('#clock');
+  target.removeClass('green-text');
+  target.addClass('pink-text')
+});
+
+$('#green-button').click( function() {
+    let target = $('#clock');
+  target.removeClass('pink-text');
+  target.addClass('green-text')
+});
 
 });
