@@ -14,3 +14,18 @@ body {
     color: white;
     font-size: 100px;
 }
+
+button {
+  font-size: 2em;
+}
+
+.left-align {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-align {
+  display: flex;
+  /* align-content: right; */
+  justify-content: flex-end;
+}
